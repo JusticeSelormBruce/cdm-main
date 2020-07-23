@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Campus;
+use App\Department;
+use App\MainAccount;
+use App\Program;
 use App\Role;
 use App\Route;
 
+use App\Subjects;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -39,8 +44,16 @@ class MainController extends Controller
             $links = null;
         }
         Session::put('routes', $links);
-        return view('dashboard');
+
+        $campuses = Campus::count();
+        $departments = Department::count();
+        $subjects = Subjects::count();
+        $programmes = Program::count();
+        $students = User::where('user_type', 'student')->count();
+        $lecturer = User::where('user_type', 'Lecturer')->count();
+        return view('dashboard', compact('campuses', 'departments', 'subjects', 'programmes', 'students', 'lecturer'));
     }
+
     public function AssignPrivilegeIndex()
     {
 
@@ -62,6 +75,7 @@ class MainController extends Controller
         $me = Session::get('id');
         return view('admin.privilege.form', compact('privileges', 'users', 'data', 'me', 'userRoles'));
     }
+
     public function getUserRoles(Request $request)
     {
         Session::put('id', $request->user_id);
@@ -69,6 +83,7 @@ class MainController extends Controller
         Session::put('user_id', $result);
         return back();
     }
+
     public function getSelectedRolesLogic()
     {
         $data = Session::get('user_id');
@@ -103,8 +118,8 @@ class MainController extends Controller
     public function RegisterUser(Request $request)
     {
 
-        $newUser =   User::create([
-            'user_type'=>$request->type,
+        $newUser = User::create([
+            'user_type' => $request->type,
             'name' => $request->name,
             'email' => $request->email,
             'campus_id' => $request->campus_id,

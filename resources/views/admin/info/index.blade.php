@@ -6,11 +6,11 @@
 </style>
 @extends('layouts.admin')
 @section('render')
-    
+
 <div class="container-fluid pt-5">
-    @include('common.alert')
+
     <div class="jumbotron">
-     
+
           <form action="/admin/info-store" method="POST" enctype="multipart/form-data">
             @csrf
                 <div class="row">
@@ -45,20 +45,20 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 input-group-sm pt-3">
                         <img class="avatar img-raised img-fluid" id="value"/>
                     </div>
-               
+
             </div>
                    @else
                    <img class="avatar img-raised img-fluid" src="{{Storage::url($info->logo)}}">
                    @endif
-                       
-        
-        
+
+
+
                 </div>
                 <div class="row">
                     <div class="mx-auto"><button type="submit" class="btn btn-success btn-sm"> <span class="mx-5">Save</span></button></div>
                 </div>
           </form>
-      
+
     </div>
 </div>
 

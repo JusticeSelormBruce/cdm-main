@@ -12,7 +12,7 @@ class LecturarController extends Controller
 {
     public function assignSubjectIndex()
     {
-        $users = User::get()->all();
+        $users = User::where('user_type','Lecturer')->get()->all();
         $subject = Subjects::all();
 
         if (Session::get('user_id') == null) {
@@ -55,7 +55,7 @@ class LecturarController extends Controller
             Lecturar::create(['user_id' => $user_id, 'subject_id' => $value]);
         } else {
 
-            Lecturar::whereId($user_subject_exist->id)->update(['classroom_ids' => $request->subject_id]);
+            Lecturar::whereId($user_subject_exist->id)->update(['subject_id' => $request->subject_id]);
         }
 
         return back()->with('msg', 'Subjects  Assigned  to Lecturer successfully');

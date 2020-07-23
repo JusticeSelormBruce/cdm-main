@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bcd10ff-35b7-43e9-9362-7c4e409251b1" name="Default Changelist" comment="" />
+    <list default="true" id="3bcd10ff-35b7-43e9-9362-7c4e409251b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/campus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/department.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/money.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/nobody.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/programmes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/student.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/subject.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/teacher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/accounts/credit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/change_password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LecturarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LecturarController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/accounts/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/accounts/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/accounts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/accounts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/info/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/info/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/lecturer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/lecturer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +34,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,6 +144,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1f2aGe7zwRTZhh8tkdFUejTkhzc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -126,6 +154,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/avatar" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -138,6 +167,7 @@
       <recent name="C:\Users\work\Desktop\Projects\cdm\resources\views\admin\college\department" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\work\Desktop\Projects\cdm\public\icons" />
       <recent name="C:\Users\work\Desktop\Projects\cdm\resources\views\avatar" />
     </key>
   </component>
@@ -164,7 +194,7 @@
       <workItem from="1595458342366" duration="4625000" />
       <workItem from="1595464658008" duration="483000" />
       <workItem from="1595488152488" duration="8040000" />
-      <workItem from="1595500683250" duration="11805000" />
+      <workItem from="1595500683250" duration="20419000" />
     </task>
     <servers />
   </component>
@@ -201,9 +231,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="105" y="-21" width="1115" height="716" key="dock-window-1/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1595504313915" />
-    <state x="1712" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595514094352">
+    <state x="38" y="0" width="1028" height="716" maximized="true" key="dock-window-2" timestamp="1595519004013">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="38" y="0" width="1028" height="716" maximized="true" key="dock-window-2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1595519004013" />
+    <state x="0" y="0" width="1028" height="716" maximized="true" key="dock-window-3" timestamp="1595523256440">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" width="1028" height="716" maximized="true" key="dock-window-3/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1595523256440" />
+    <state x="1712" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595521009090">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1712" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1595514094352" />
+    <state x="1712" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1595521009090" />
   </component>
 </project>

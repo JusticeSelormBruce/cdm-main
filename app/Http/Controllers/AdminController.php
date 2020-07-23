@@ -164,8 +164,18 @@ class AdminController extends Controller
 
     public function AccountIndex()
     {
+        $academic_year = Academicyear::all();
+        $semester = Semester::all();
         $accounts = MainAccount::all();
-        return view('admin.accounts.index', compact('accounts'));
+        $user = User::where('user_type', 'student')->get()->all();
+        return view('admin.accounts.index', compact('accounts', 'academic_year', 'semester', 'user'));
+    }
+
+    public function CreditAccount(Request $request)
+    {
+        $data = $request->except('_token');
+        MainAccount::create($data);
+        return back()->with('msg', 'Account Credited Successfully');
     }
 
     public function CollegeSettingsIndex()
@@ -272,13 +282,13 @@ class AdminController extends Controller
     public function StudentList()
     {
         $user = User::where('user_type', 'student')->get()->all();
-        return view('admin.student.list',compact('user'));
+        return view('admin.student.list', compact('user'));
     }
 
     public function applicantMoreDetails($id)
     {
         $avatar = Avatar::OrderByDesc('id')->where('user_id', $id)->get()->first();
-        $applicant= Student::where('user_id', $id)->first();
-        return view('admin.student.view', compact('applicant','avatar'));
+        $applicant = Student::where('user_id', $id)->first();
+        return view('admin.student.view', compact('applicant', 'avatar'));
     }
 }

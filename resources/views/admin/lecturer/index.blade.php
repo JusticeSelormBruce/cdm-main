@@ -14,7 +14,7 @@
     </style>
     <div class="container-fluid pt-5">
         <div class="jumbotron">
-            @include('common.alert')
+
         </div>
         <div class="row">
             <div class="mx-auto w-50">

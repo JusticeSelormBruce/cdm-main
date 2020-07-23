@@ -67,7 +67,7 @@ Route::post('update-attachment', 'AdminController@UpdateAttachment')->name('atta
 Route::get('delete-announcement/{id}', 'AdminController@DeleteAnnouncement')->name('announcement.delete');
 
 Route::get('/admin/accounts-index', 'AdminController@AccountIndex');
-
+Route::post('/admin/credit-account', 'AdminController@CreditAccount');
 
 Route::get('/admin/college-settings', 'AdminController@CollegeSettingsIndex');
 Route::post('/admin/colleges/department/store', 'AdminController@storeDepartmentDetails');
