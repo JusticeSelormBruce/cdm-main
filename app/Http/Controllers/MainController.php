@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Avatar;
 use App\Campus;
 use App\Department;
 use App\MainAccount;
@@ -9,6 +10,7 @@ use App\Program;
 use App\Role;
 use App\Route;
 
+use App\Student;
 use App\Subjects;
 use App\User;
 use Illuminate\Http\Request;
@@ -51,7 +53,9 @@ class MainController extends Controller
         $programmes = Program::count();
         $students = User::where('user_type', 'student')->count();
         $lecturer = User::where('user_type', 'Lecturer')->count();
-        return view('dashboard', compact('campuses', 'departments', 'subjects', 'programmes', 'students', 'lecturer'));
+        $applicant = Student::where('user_id',Auth::id())->first();
+        $avatar = Avatar::OrderByDesc('id')->where('user_id', Auth::id())->get()->first();
+        return view('dashboard', compact('campuses', 'departments', 'subjects', 'programmes', 'students', 'lecturer','applicant','avatar'));
     }
 
     public function AssignPrivilegeIndex()

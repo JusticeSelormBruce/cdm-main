@@ -11,7 +11,7 @@
         }
     </style>
     <div class="container py-5">
-        @if(Auth::user()->user_type == "admin")
+        @if(Auth::user()->user_type == "Admin" || Auth::user()->user_type == "Lecturer"  )
 
             <div class="row mt-5">
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -75,6 +75,15 @@
                     </div>
                 </div>
             </div>
+        @else
+            <div class="jumbotron">
+                @if($applicant == null)
+                    <h3>Sorry, No personal Information's Yet</h3>
+                @else
+                    @include('admin.student.view')
+                @endif
+            </div>
+
         @endif
     </div>
 @endsection

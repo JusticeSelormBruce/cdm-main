@@ -19,7 +19,7 @@ class UserTableSeeder extends Seeder
                 'email'=>'itcare@ktu.edu.gh',
                 'password'=>Hash::make('$$web@me'),
                 'campus_id'=>1,
-                'user_type'=>'admin'
+                'user_type'=>'Admin'
             ]
         );
     }
